@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varsha Makeup Artistry - Premium Bridal Makeup Artist in Thanjavur</title>
+    <meta name="description"
+        content="Professional bridal makeup artist in Thanjavur with 15+ years experience. Bridal makeup, HD makeup, saree draping & makeup courses.">
+    <link rel="stylesheet" href="premium-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="premiumSpinner" class="premium-spinner-wrapper">
+        <div class="typing-container">
+            <div class="glowing-crown"><i class="fas fa-crown"></i></div>
+            <h1 class="typing-brand">Varsha</h1>
+            <p class="typing-sub">Makeup Artistry</p>
+        </div>
+        <!-- Loading Message -->
+        <div class="spinner-message">
+            <p class="loading-phrase">Preparing your elegance...</p>
+        </div>
+    </div>
+    <!-- Limited Seats Popup -->
+    <div id="limitedSeatsPopup" class="popup-overlay">
+        <div class="popup-content">
+            <button class="popup-close" onclick="closePopup()">&times;</button>
+            <div class="popup-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>🎓 Limited Seats Available!</h3>
+            <p>New batch starting soon for our <strong>Professional Bridal Makeup Course</strong></p>
+            <p class="highlight-text">Only 8 seats remaining</p>
+            <button class="cta-button" onclick="openWhatsApp('course')">Enquire Now</button>
+        </div>
+    </div>
+
+    <!-- Exit Intent Popup -->
+    <div id="exitPopup" class="popup-overlay">
+        <div class="popup-content">
+            <button class="popup-close" onclick="closeExitPopup()">&times;</button>
+            <div class="popup-icon">
+                <i class="fas fa-gift"></i>
+            </div>
+            <h3>Wait! Special Offer 🎁</h3>
+            <p>Get <strong>15% OFF</strong> on bridal packages booked this month</p>
+            <p class="highlight-text">Free trial makeup included</p>
+            <button class="cta-button" onclick="openWhatsApp('special-offer')">Claim Offer</button>
+        </div>
+    </div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="tel:+919943848512" class="float-btn call-btn" aria-label="Call Now">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="https://wa.me/919943848512?text=Hi%20Varsha,%20I%20would%20like%20to%20know%20more%20about%20your%20services"
+            class="float-btn whatsapp-btn" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <button onclick="scrollToSection('booking')" class="float-btn book-btn" aria-label="Book Now">
+            <i class="fas fa-calendar-check"></i>
+        </button>
+    </div>
+
+    <!-- Festive Offer Banner -->
+    <div class="festive-banner" id="festiveBanner">
+        <div class="banner-content">
+            <i class="fas fa-star"></i>
+            <span>🎉 Festive Season Special: Book your bridal makeup & get FREE saree draping! 🎉</span>
+            <i class="fas fa-star"></i>
+        </div>
+        <button class="banner-close" onclick="closeBanner()">&times;</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <h1>Varsha Makeup Artistry</h1>
+                <p class="tagline">Thanjavur's Premier Bridal Studio</p>
+            </div>
+            <button class="mobile-menu-toggle hamburger" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+                <li><a href="#portfolio" onclick="closeMobileMenu()">Portfolio</a></li>
+                <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
+                <li><a href="#courses" onclick="closeMobileMenu()">Courses</a></li>
+                <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+                <li><a href="#testimonials" onclick="closeMobileMenu()">Reviews</a></li>
+                <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+                <li><a href="#booking" class="nav-cta" onclick="closeMobileMenu()">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video autoplay muted loop playsinline class="hero-video" id="heroVideo">
+            <source src="media/video1.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-subtitle">15+ Years of Excellence</span>
+                <h1 class="hero-title">Transform Your Beauty Dreams into Reality</h1>
+                <p class="hero-description">Thanjavur's most trusted bridal makeup artist & beauty educator.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>1,481+</h3>
+                        <p>Brides Beautified</p>
+                    </div>
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Students Trained</p>
+                    </div>
+                    <div class="stat">
+                        <h3>15+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button onclick="scrollToSection('booking')" class="cta-button primary">Book Your Date</button>
+                    <button onclick="scrollToSection('portfolio')" class="cta-button secondary">View Portfolio</button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What We Offer</span>
+                <h2 class="section-title">Premium Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Bridal Makeup</h3>
+                    <p>Transform into the most beautiful bride with our signature bridal looks. Traditional,
+                        contemporary, and fusion styles.</p>
+                    <button onclick="openWhatsApp('bridal-makeup')" class="service-btn">Enquire Now</button>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>HD Makeup</h3>
+                    <p>Camera-ready perfection for receptions, engagements, and special events. Flawless finish that
+                        lasts all day.</p>
+                    <button onclick="openWhatsApp('hd-makeup')" class="service-btn">Enquire Now</button>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Saree Draping</h3>
+                    <p>Expert saree draping in traditional and modern styles. Perfect pleats and elegant drapes for your
+                        special day.</p>
+                    <button onclick="openWhatsApp('saree-draping')" class="service-btn">Enquire Now</button>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Makeup Courses</h3>
+                    <p>Professional training in bridal and pro makeup. Learn from an expert with 15+ years of industry
+                        experience.</p>
+                    <button onclick="scrollToSection('courses')" class="service-btn">View Courses</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Work</span>
+                <h2 class="section-title">Portfolio Gallery</h2>
+            </div>
+
+            <!-- Portfolio Filters -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="bridal">Bridal Gallery</button>
+                <button class="filter-btn" data-filter="reception">Reception Looks</button>
+                <button class="filter-btn" data-filter="hd">HD Makeup</button>
+                <button class="filter-btn" data-filter="saree">Saree Draping</button>
+                <button class="filter-btn" data-filter="student">Student Work</button>
+                <button class="filter-btn" data-filter="academy">Academy Training</button>
+                <button class="filter-btn" data-filter="before-after">Before/After</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Bridal Gallery -->
+                <div class="portfolio-item" data-category="bridal">
+                    <img src="media/img-01.webp" alt="Traditional Bridal Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>Traditional Bridal Look</h3>
+                        <p>Classic South Indian Bridal Makeup</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="bridal">
+                    <img src="media/img-02.webp" alt="Contemporary Bridal Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>Contemporary Bridal</h3>
+                        <p>Modern Bridal Elegance</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="bridal">
+                    <img src="media/img-03.webp" alt="Fusion Bridal Look">
+                    <div class="portfolio-overlay">
+                        <h3>Fusion Bridal</h3>
+                        <p>East Meets West</p>
+                    </div>
+                </div>
+
+                <!-- Reception Looks -->
+                <div class="portfolio-item" data-category="reception">
+                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&q=80"
+                        alt="Reception Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>Reception Glamour</h3>
+                        <p>Evening Reception Look</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="reception">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80"
+                        alt="Cocktail Party Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>Cocktail Party</h3>
+                        <p>Sophisticated Evening Look</p>
+                    </div>
+                </div>
+
+                <!-- HD Makeup -->
+                <div class="portfolio-item" data-category="hd">
+                    <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=800&q=80"
+                        alt="HD Airbrush Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>HD Airbrush</h3>
+                        <p>Camera-Ready Perfection</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="hd">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=80"
+                        alt="Professional HD Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>Professional HD</h3>
+                        <p>Photoshoot Ready</p>
+                    </div>
+                </div>
+
+                <!-- Saree Draping -->
+                <div class="portfolio-item" data-category="saree">
+                    <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=800&q=80"
+                        alt="Traditional Saree Draping">
+                    <div class="portfolio-overlay">
+                        <h3>Traditional Draping</h3>
+                        <p>Classic Kanjivaram Style</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="saree">
+                    <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=80"
+                        alt="Modern Saree Style">
+                    <div class="portfolio-overlay">
+                        <h3>Modern Drape</h3>
+                        <p>Contemporary Saree Styling</p>
+                    </div>
+                </div>
+
+                <!-- Student Work -->
+                <div class="portfolio-item" data-category="student">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&q=80"
+                        alt="Student Bridal Work">
+                    <div class="portfolio-overlay">
+                        <h3>Student Excellence</h3>
+                        <p>Bridal Makeup by Our Graduate</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="student">
+                    <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=800&q=80"
+                        alt="Student Portfolio">
+                    <div class="portfolio-overlay">
+                        <h3>Student Portfolio</h3>
+                        <p>Graduation Project Work</p>
+                    </div>
+                </div>
+
+                <!-- Academy Training -->
+                <div class="portfolio-item" data-category="academy">
+                    <img src="https://images.unsplash.com/photo-1522337094846-8a818192de1f?w=800&q=80"
+                        alt="Makeup Training Class">
+                    <div class="portfolio-overlay">
+                        <h3>Training Session</h3>
+                        <p>Hands-on Learning</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="academy">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80"
+                        alt="Makeup Academy">
+                    <div class="portfolio-overlay">
+                        <h3>Academy Workshop</h3>
+                        <p>Professional Training</p>
+                    </div>
+                </div>
+
+                <!-- Before/After -->
+                <div class="portfolio-item" data-category="before-after">
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&q=80"
+                        alt="Bridal Transformation">
+                    <div class="portfolio-overlay">
+                        <h3>Bridal Transformation</h3>
+                        <p>Before & After Magic</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="before-after">
+                    <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=800&q=80"
+                        alt="Makeup Transformation">
+                    <div class="portfolio-overlay">
+                        <h3>Complete Makeover</h3>
+                        <p>Transformation Story</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section class="instagram-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Follow Us</span>
+                <h2 class="section-title">Latest from Instagram</h2>
+                <p class="section-description">See our daily transformations and behind-the-scenes moments</p>
+            </div>
+            <div class="instagram-grid" id="instagramGrid">
+                <!-- Embedded Auto-playing Muted Videos simulating Reels -->
+                <div class="insta-item reveal">
+                    <video autoplay muted loop playsinline>
+                        <source src="media/video-01.mp4" type="video/mp4">
+                    </video>
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="insta-item reveal">
+                    <video autoplay muted loop playsinline>
+                        <source src="media/video-02.mp4" type="video/mp4">
+                    </video>
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="insta-item reveal">
+                    <video autoplay muted loop playsinline>
+                        <source src="media/video-03.mp4" type="video/mp4">
+                    </video>
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="insta-item reveal">
+                    <video autoplay muted loop playsinline>
+                        <source src="media/video-04.mp4" type="video/mp4">
+                    </video>
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="insta-item reveal">
+                    <video autoplay muted loop playsinline>
+                        <source src="media/video-05.mp4" type="video/mp4">
+                    </video>
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="insta-item reveal">
+                    <video autoplay muted loop playsinline>
+                        <source src="media/video1.mp4" type="video/mp4">
+                    </video>
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="instagram-cta">
+                <a href="https://instagram.com/thanjavur_varsha_bridal_makeup_artist" target="_blank"
+                    class="cta-button">
+                    <i class="fab fa-instagram"></i> Follow @thanjavur_varsha_bridal_makeup_artist
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Learn from the Expert</span>
+                <h2 class="section-title">Professional Makeup Courses</h2>
+                <p class="section-description">Start your journey as a professional makeup artist with comprehensive
+                    training</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-badge">Most Popular</div>
+                    <div class="course-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Professional Bridal Makeup Course</h3>
+                    <p class="course-duration"><i class="far fa-clock"></i> 6 Weeks | 48 Hours</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Complete bridal makeup techniques</li>
+                        <li><i class="fas fa-check"></i> Traditional & contemporary styles</li>
+                        <li><i class="fas fa-check"></i> HD & airbrush makeup</li>
+                        <li><i class="fas fa-check"></i> Saree draping mastery</li>
+                        <li><i class="fas fa-check"></i> Hair styling basics</li>
+                        <li><i class="fas fa-check"></i> Client management</li>
+                        <li><i class="fas fa-check"></i> Certification provided</li>
+                        <li><i class="fas fa-check"></i> Practical live projects</li>
+                    </ul>
+                    <div class="course-price">
+                        <span class="price-label">Investment:</span>
+                        <span class="price">Contact for Details</span>
+                    </div>
+                    <button onclick="openWhatsApp('bridal-course')" class="cta-button">Enroll Now</button>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Complete Cosmetology Course</h3>
+                    <p class="course-duration"><i class="far fa-clock"></i> 3 Months | 96 Hours</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> Advanced makeup techniques</li>
+                        <li><i class="fas fa-check"></i> Skin care & facial treatments</li>
+                        <li><i class="fas fa-check"></i> Hair care & treatments</li>
+                        <li><i class="fas fa-check"></i> Mehendi & nail art</li>
+                        <li><i class="fas fa-check"></i> Spa therapies basics</li>
+                        <li><i class="fas fa-check"></i> Salon management</li>
+                        <li><i class="fas fa-check"></i> Professional certification</li>
+                        <li><i class="fas fa-check"></i> Job placement assistance</li>
+                    </ul>
+                    <div class="course-price">
+                        <span class="price-label">Investment:</span>
+                        <span class="price">Contact for Details</span>
+                    </div>
+                    <button onclick="openWhatsApp('cosmetology-course')" class="cta-button">Enroll Now</button>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>HD Makeup Masterclass</h3>
+                    <p class="course-duration"><i class="far fa-clock"></i> 2 Weeks | 24 Hours</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check"></i> HD & 4K makeup techniques</li>
+                        <li><i class="fas fa-check"></i> Airbrush makeup mastery</li>
+                        <li><i class="fas fa-check"></i> Color theory & correction</li>
+                        <li><i class="fas fa-check"></i> Photography makeup</li>
+                        <li><i class="fas fa-check"></i> Celebrity makeup secrets</li>
+                        <li><i class="fas fa-check"></i> Product knowledge</li>
+                        <li><i class="fas fa-check"></i> Portfolio building</li>
+                        <li><i class="fas fa-check"></i> Workshop certificate</li>
+                    </ul>
+                    <div class="course-price">
+                        <span class="price-label">Investment:</span>
+                        <span class="price">Contact for Details</span>
+                    </div>
+                    <button onclick="openWhatsApp('hd-masterclass')" class="cta-button">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-benefits">
+                <h3>Why Choose Our Academy?</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="fas fa-award"></i>
+                        <h4>15+ Years Experience</h4>
+                        <p>Learn from a seasoned professional</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Small Batch Size</h4>
+                        <p>Maximum 8 students per batch</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-hands-helping"></i>
+                        <h4>Hands-on Training</h4>
+                        <p>Practical learning with live models</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-briefcase"></i>
+                        <h4>Job Assistance</h4>
+                        <p>Placement support after completion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="media/founder.webp" alt="Varsha - Makeup Artist">
+                    <div class="about-badge">
+                        <i class="fas fa-award"></i>
+                        <span>15+ Years</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-subtitle">About Me</span>
+                    <h2 class="section-title">Meet Varsha</h2>
+                    <p class="about-intro">Professional Bridal Makeup Artist & Celebrity Makeup Educator with 15+ years
+                        of transforming dreams into reality.</p>
+
+                    <p>Hello! I'm Varsha, the founder of Varsha Makeup Artistry in Thanjavur. With over 15 years of
+                        experience in the beauty industry, I've had the privilege of beautifying over 1,481 brides and
+                        training 500+ aspiring makeup artists.</p>
+
+                    <p>My journey began with a passion for enhancing natural beauty and has evolved into a mission to
+                        empower women through the art of makeup. Whether it's your wedding day or your first step
+                        towards becoming a professional makeup artist, I'm here to make your dreams come true.</p>
+
+                    <div class="about-specialties">
+                        <h3>My Expertise</h3>
+                        <div class="specialty-tags">
+                            <span><i class="fas fa-check"></i> Bridal Makeup</span>
+                            <span><i class="fas fa-check"></i> HD Makeup</span>
+                            <span><i class="fas fa-check"></i> Airbrush Techniques</span>
+                            <span><i class="fas fa-check"></i> Saree Draping</span>
+                            <span><i class="fas fa-check"></i> Hair Styling</span>
+                            <span><i class="fas fa-check"></i> Professional Training</span>
+                        </div>
+                    </div>
+
+                    <div class="about-achievements">
+                        <div class="achievement">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <h4>Certified Professional</h4>
+                                <p>Advanced certifications in bridal & HD makeup</p>
+                            </div>
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Client Satisfaction</h4>
+                                <p>98% client satisfaction rate with 500+ reviews</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="scrollToSection('contact')" class="cta-button">Get in Touch</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Client Love</span>
+                <h2 class="section-title">What Brides Say</h2>
+            </div>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Varsha made me look absolutely stunning on my wedding day! Her
+                        attention to detail and understanding of what I wanted was incredible. I felt like a princess!"
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Priya">
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <p>Bridal Makeup Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The bridal makeup course transformed my career! Varsha is an excellent
+                        teacher who genuinely cares about her students' success. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80"
+                            alt="Lakshmi">
+                        <div>
+                            <h4>Lakshmi Devi</h4>
+                            <p>Course Graduate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional, punctual, and talented! Varsha did makeup for my entire
+                        family at my wedding. Everyone looked gorgeous and the makeup lasted all day."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=100&q=80" alt="Divya">
+                        <div>
+                            <h4>Divya Krishnan</h4>
+                            <p>Bridal Package Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Best makeup artist in Thanjavur! Varsha understood my skin tone
+                        perfectly and created a look that was elegant and natural. My reception photos came out
+                        beautifully!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80" alt="Aishwarya">
+                        <div>
+                            <h4>Aishwarya Reddy</h4>
+                            <p>Reception Makeup Client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev" onclick="prevTestimonial()"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next" onclick="nextTestimonial()"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking System Section -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Reserve Your Spot</span>
+                <h2 class="section-title">Book Your Appointment</h2>
+                <p class="section-description">Fill in your details and we'll get back to you within 24 hours</p>
+            </div>
+            <div class="booking-container">
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName"><i class="fas fa-user"></i> Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"><i class="fas fa-phone"></i> Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="eventDate"><i class="fas fa-calendar"></i> Event Date *</label>
+                            <input type="date" id="eventDate" name="eventDate" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceType"><i class="fas fa-list"></i> Service Type *</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="">Select a service</option>
+                            <option value="bridal-makeup">Bridal Makeup</option>
+                            <option value="reception-makeup">Reception Makeup</option>
+                            <option value="hd-makeup">HD Makeup</option>
+                            <option value="saree-draping">Saree Draping</option>
+                            <option value="bridal-package">Complete Bridal Package</option>
+                            <option value="course-enquiry">Course Enquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="eventLocation"><i class="fas fa-map-marker-alt"></i> Event Location *</label>
+                        <input type="text" id="eventLocation" name="eventLocation" placeholder="Where is your event?"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeSlot"><i class="fas fa-clock"></i> Preferred Time Slot</label>
+                        <select id="timeSlot" name="timeSlot">
+                            <option value="">Select time slot</option>
+                            <option value="early-morning">Early Morning (5 AM - 8 AM)</option>
+                            <option value="morning">Morning (8 AM - 12 PM)</option>
+                            <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                            <option value="evening">Evening (4 PM - 8 PM)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment"></i> Additional Details</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Tell us more about your requirements..."></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-button submit-btn">
+                        <i class="fab fa-whatsapp"></i> Send Enquiry via WhatsApp
+                    </button>
+                </form>
+
+                <div class="booking-info">
+                    <div class="info-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Quick Response</h3>
+                        <p>We respond to all enquiries within 24 hours</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Secure Booking</h3>
+                        <p>Your information is safe and confidential</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-gift"></i>
+                        <h3>Special Packages</h3>
+                        <p>Ask about our bridal package deals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get in Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <a href="tel:+919943848512">+91 99438 48512</a>
+                        <p>Available: 9 AM - 8 PM</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <a href="https://wa.me/919943848512" target="_blank">Chat with us</a>
+                        <p>Quick response guaranteed</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Near M TEENZ SHOWROOM<br>New Housing Unit<br>Thanjavur, Tamil Nadu 613005</p>
+                        <a href="https://maps.google.com/?q=Near+M+TEENZ+SHOWROOM,+New+Housing+Unit,+Thanjavur,+Tamil+Nadu+613005"
+                            target="_blank" class="map-link">Get Directions</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h3>Follow Us</h3>
+                        <a href="https://instagram.com/thanjavur_varsha_bridal_makeup_artist"
+                            target="_blank">@thanjavur_varsha_bridal_makeup_artist</a>
+                        <p>Daily transformations & tips</p>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3!2d79.14!3d10.78!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDQ2JzQ4LjAiTiA3OcKwMDgnMjQuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="map-overlay">
+                        <a href="https://maps.google.com/?q=Near+M+TEENZ+SHOWROOM,+New+Housing+Unit,+Thanjavur,+Tamil+Nadu+613005"
+                            target="_blank" class="cta-button">
+                            <i class="fas fa-directions"></i> Navigate to Studio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Varsha Makeup Artistry</h3>
+                    <p>Thanjavur's premier bridal makeup studio and academy. Transforming beauty dreams into reality for
+                        over 15 years.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/thanjavur_varsha_bridal_makeup_artist" target="_blank"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/919943848512" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#" onclick="openWhatsApp('bridal-makeup')">Bridal Makeup</a></li>
+                        <li><a href="#" onclick="openWhatsApp('hd-makeup')">HD Makeup</a></li>
+                        <li><a href="#" onclick="openWhatsApp('saree-draping')">Saree Draping</a></li>
+                        <li><a href="#courses">Makeup Courses</a></li>
+                        <li><a href="#booking">Book Appointment</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+919943848512">+91 99438 48512</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Near M TEENZ SHOWROOM<br>New Housing Unit, Thanjavur</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>9:00 AM - 8:00 PM<br>7 Days a Week</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Varsha Makeup Artistry. All Rights Reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> in Thanjavur</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="premium-script.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
+</body>
+
+</html>
